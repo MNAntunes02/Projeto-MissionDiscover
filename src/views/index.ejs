@@ -12,12 +12,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
         <!-- TITLE -->
-        <title>Criar Sala | Rocket.Q</title>
+        <title>Criar Sala | Rocket.Q</title>        
     </head>
     <body>
         <div id="home" class="content">
             <header>
-                <img src="/images/logo.svg" alt="Rocket.Q Logo"/>
+                <a href="#">                  
+                    <img src="/images/icon-logo.svg" alt="Rocket.Q Logo"/>
+                    <h1>rocket</h1><h1>q</h1>
+                </a>
             </header>
 
             <div id="bg">
@@ -27,12 +30,22 @@
 
             <main>
                 <div class="container">
-                    
+
                     <!-- Renderizar ejs da pasta parts -->
-                    <%- include(`parts/${page}`) %>
+                    <%- include(`parts/${page}`) %>        
 
                 </div><!-- .container -->
             </main> <!-- #home --> <!-- .content -->
+            
         </div>
+
+        <!-- BOTTOM THEME -->
+
+        <div class="theme-bottom">
+            <input type="checkbox" name="theme" id="switch">
+            <label for="switch">Toggle</label>
+        </div>
+
+        <script src="/scripts/theme.js"></script>
     </body>
 </html>

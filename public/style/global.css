@@ -8,11 +8,14 @@
 }
 
 html{
-    --black: #0D114F;
+    --black: #0D114F;   
     --white:  #FAFAFA;
+    --white-fixed:  #FAFAFA;
     --red: #E83F5B;
     --ligth-blue: #E0ECFF;
     --blue: #3485FF;
+    --blue-dark: #143463;
+    --purple: #864bd8;
     --background: #FBFCFF;
     --overlay: #040911;
     --icons-details: #A5B0C1;
@@ -27,6 +30,23 @@ html{
     --hover-red: #EA4B65;
     --hover-grey: #8794A7;
 
+    /* dark-theme */
+
+    /* --black: #FAFAFA; 
+    --white:  #040911; 
+    --background: #040911; 
+    --overlay: #FAFAFA;  */
+
+    /* light-theme */
+
+    /* --black: #0D114F;   
+    --white:  #FAFAFA;
+    --background: #FBFCFF;
+    --overlay: #040911; */
+
+
+
+
     font-size: 62.5%
 }
 
@@ -35,6 +55,7 @@ body{
     height: 100vh;
     width: 100vw;
     background: var(--background);
+    
 }
 
 body, button, input, textarea{
@@ -79,9 +100,10 @@ button,.button{
     justify-content: center;
 
     background: var(--blue);
-    color: var(--white);
+    color: var(--white-fixed);
 
     cursor: pointer;
+
 
 }
 
@@ -110,12 +132,79 @@ button.outlined, .button.outlined{
     border: .2rem solid var(--blue);
 }
 
+
+
 .content header{
     width: 80%;
     margin: 3.5rem auto;
 }
 
+/* ------------------- LOGO ------------------- */
+
+.content header a{
+    display: flex;
+}
+
 .content header img{
-    width: 16.7rem;
-   
+    width: 4.4rem;
+    margin-right: 1rem;
+
+}
+
+.content header h1{
+    font-family: 'Poppins',sans-serif;
+    color: var(--black);
+    letter-spacing: -.1rem;
+}
+
+.content header h1:nth-child(2)::after{
+    content: '.';
+    color: var(--blue);
+}
+
+
+/*----------------- CHECKBOX MODO DARK ---------------*/
+
+input[type=checkbox]{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+label{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 5.2rem;
+    height: 2.7rem;
+    background-color:  var(--purple);
+    float: right;
+    border-radius: 10rem;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 9rem;
+    transition: .3s;
+}
+
+input:checked + label{
+    background-color: var(--purple);
+}
+
+input:checked + label::after{
+    left: calc(100%-.5rem);
+    transform: translateX(130%);
+}
+
+.theme-bottom{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
 }

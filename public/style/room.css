@@ -63,7 +63,8 @@
     background: transparent;
     width: 100%;
     padding-bottom: 4rem;
-    
+    color: var(--black);
+    font-size: 2rem;
 }
 
 #question-form form textarea::placeholder{
@@ -102,10 +103,11 @@
 .question-wrapper{
     width: 100%;
     height: auto;
-    background: var(--ligth-blue);
+    background: rgba(0, 0, 255, .1);
     border-radius: .8rem;
     border-top-left-radius: 0;
     margin-bottom: .8rem;
+    color: var(--overlay);
 
 }
 
@@ -164,7 +166,7 @@
 /* ------------------- READ ------------------- */
 
 .read{
-    background: var(--grey-dark-opacity);
+    background: rgba(77,94,119,.1);
     
 }
 
