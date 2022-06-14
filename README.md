@@ -3,7 +3,7 @@
 ## Projeto NLW Together (6ª edição) Rocketseat :rocket:
 
 
-Central de perguntas anônimas, dividas em salas públicas onde o operador, dono da sala, junto com uma senha própria pode marcar como lida e excluir essas peguntas.
+Central de perguntas anônimas, dividas em salas públicas onde o operador, dono da sala, junto com uma senha própria pode marcar como lida e excluir essas perguntas.
 
 
 
