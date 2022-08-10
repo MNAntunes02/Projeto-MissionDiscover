@@ -2,7 +2,9 @@
 
 ## Projeto NLW Together (6ª edição) Rocketseat :rocket:
 
-![screen-capture](https://user-images.githubusercontent.com/86163211/184007007-fb1c6f2e-63de-400a-944e-a5dbced0a73f.gif)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/86163211/184007007-fb1c6f2e-63de-400a-944e-a5dbced0a73f.gif" alt="DevLinks Show Up Gif" />
+</div>
 
 
 
